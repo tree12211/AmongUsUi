@@ -1,3 +1,7 @@
+if game.CoreGui:FindFirstChild("AmongUsHub") then
+    game.CoreGui:FindFirstChild("AmongUsHub"):Destroy()
+end
+
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');
@@ -10,7 +14,7 @@ local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
-local ScreenGui = Instance.new('ScreenGui');
+local ScreenGui = Instance.new('AmongUsHub');
 ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
