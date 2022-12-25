@@ -43,7 +43,7 @@ local Library = {
     OpenedFrames = {};
 
     Signals = {};
-    ScreenGui = ScreenGui;
+    ScreenGui = AmongUsHub;
 };
 
 local RainbowStep = 0
