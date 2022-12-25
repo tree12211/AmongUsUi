@@ -1,5 +1,5 @@
-if game.CoreGui:FindFirstChild("AmongUsHub") then
-    game.CoreGui:FindFirstChild("AmongUsHub"):Destroy()
+if game.CoreGui:FindFirstChild("ScreenGui ") then
+    game.CoreGui:FindFirstChild("ScreenGui "):Destroy()
 end
 
 local InputService = game:GetService('UserInputService');
@@ -14,8 +14,8 @@ local Mouse = LocalPlayer:GetMouse();
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
-local ScreenGui = Instance.new('AmongUsHub');
-ProtectGui(AmongUsHub);
+local ScreenGui = Instance.new('ScreenGui ');
+ProtectGui(ScreenGui );
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
@@ -43,7 +43,7 @@ local Library = {
     OpenedFrames = {};
 
     Signals = {};
-    ScreenGui = AmongUsHub;
+    ScreenGui = ScreenGui;
 };
 
 local RainbowStep = 0
