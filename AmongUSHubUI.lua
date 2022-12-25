@@ -1,3 +1,6 @@
+if game.CoreGui:FindFirstChild("ScreenGui") then
+    game.CoreGui:FindFirstChild("ScreenGui"):Destroy()
+end
 
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
